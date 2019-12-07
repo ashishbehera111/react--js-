@@ -1,0 +1,5 @@
+first go to any folder then search (url search bar) type in a search bar  cmd,
+and then cmd will open and then just type ,npx create-react-app my-app and then enter;
+when every thing will be installed ;
+then go to react app folder then type in search box cmd ,
+and type npm start , after that ur react app will be started 
