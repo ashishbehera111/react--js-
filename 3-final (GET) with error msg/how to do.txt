@@ -1,0 +1,7 @@
+1 = ( https://jsonplaceholder.typicode.com/) this is fake rest api web site
+2= visit this website scroll down to( ROUTES )then click on 1st GET ex( /posts)
+3= copy the url and paste in your axios get code .
+
+4 = how to get the error 
+
+ans = just add 1 in the last in your axios.get( url)
