@@ -1,0 +1,57 @@
+import React, { useEffect, useState } from 'react';
+
+function Register() {
+
+const [email,setEmail]=useState()
+const [password,setPassword]=useState()
+const [age,setAge]=useState(13)
+
+// console.log(email)
+// console.log(password)
+
+function increaseAge(event){
+  event.preventDefault()
+  setAge(age+1)
+}
+
+useEffect(()=>{
+  console.log("age",age)
+},[age])
+
+
+function haldleRegister(event){
+  event.preventDefault()
+  console.log("hello world")
+}
+
+
+
+  return (
+    
+      <form>
+{age>18?(
+  <div>
+        <h2>{age}</h2> 
+<input type="email" 
+placeholder="email"
+ value={email}
+  onChange={(e)=>setEmail(e.target.value)}>
+
+  </input>
+<input type="password"
+ placeholder="password"
+ value={password} 
+ onChange={(e)=>setPassword(e.target.value)}>
+ </input>
+          <button onClick={haldleRegister}>submit</button>
+        </div>
+):<h1>you are not eligible </h1>}
+       
+        
+        <button onClick={increaseAge}>Increase</button>
+      </form>
+    
+  );
+}
+
+export default Register;
