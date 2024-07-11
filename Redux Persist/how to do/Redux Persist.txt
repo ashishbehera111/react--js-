@@ -1,0 +1,15 @@
+first visit github link redux persist {https://github.com/rt2zz/redux-persist}
+
+install it { npm install redux-persist}
+
+: then copy the // configureStore.js and paste in {store.js file} the existed in store folder 
+you have to edit some part of  configureStore.js in store.js file 
+
+
+: imp things cover the store in {} curley bracket else you will get error 
+app.js and contact.js
+ex   //import {store} from "./store/store"
+
+
+
+
