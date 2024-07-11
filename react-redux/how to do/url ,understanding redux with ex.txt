@@ -1,0 +1,5 @@
+https://blog.logrocket.com/understanding-redux-tutorial-examples/#:~:text=The%20way%20Redux%20works%20is,actions%2C%20store%2C%20and%20reducers.
+
+
+
+{(open this link &)copy inside  code(ex=builder) and create a   store folder and paste this code in  reducer.js file with some edit }

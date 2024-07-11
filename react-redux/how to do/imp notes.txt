@@ -1,0 +1,6 @@
+you cannot cover import part of   store with bracket in app.js and contact .js 
+
+ex  import store from "../store/store" = this is right
+
+    import {store} from "../store/store"= this is wrong 
+
