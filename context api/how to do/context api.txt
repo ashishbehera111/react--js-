@@ -1,0 +1,16 @@
+context api url =>{https://blog.logrocket.com/react-context-api-deep-dive-examples/}
+
+
+
+make a folder name context 
+file name CountContext
+
+=> then paste the code 
+
+=> you have to edit few code change some code name 
+
+main code in app.js , then screen folder  =>contact.js then component folder UserCard.js
+
+
+
+happy coding ///
