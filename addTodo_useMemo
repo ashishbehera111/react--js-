@@ -1,0 +1,44 @@
+import React, { useMemo, useState } from 'react';
+
+function Register() {
+  const expensiveCalculation=(num)=>{
+    console.log("calculation")
+    for(let i=0;i<1000000000;i++){
+       num+=1
+    }
+    return num
+  }
+  const[count,setCount]=useState(0)
+  const[todos,setTodos]=useState([])
+  const calculation = useMemo(()=>expensiveCalculation(count),[count])
+
+  
+ 
+const addTodo=()=>{
+  setTodos((t)=>[...t,"todotask"])
+}
+const increment=()=>{
+  setCount((c)=>c+1)
+}
+
+  return (
+    <div>
+      <div>
+        <h1>todo</h1>
+        {todos.map((todo,index)=>{
+          return <p key={index}>{todo}</p>
+        })}
+        <button onClick={addTodo}>addTodo</button>
+      </div>
+      <hr></hr>
+      <div>
+        count:{count}
+        <button onClick={increment}>+</button>
+        <h1>expensive calculation</h1>
+        {calculation}
+      </div>
+    </div>
+  );
+}
+
+export default Register;
