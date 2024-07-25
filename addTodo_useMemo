@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from 'react';
-
 function Register() {
   const expensiveCalculation=(num)=>{
     console.log("calculation")
@@ -8,19 +7,17 @@ function Register() {
     }
     return num
   }
+
   const[count,setCount]=useState(0)
   const[todos,setTodos]=useState([])
   const calculation = useMemo(()=>expensiveCalculation(count),[count])
 
-  
- 
 const addTodo=()=>{
   setTodos((t)=>[...t,"todotask"])
 }
 const increment=()=>{
   setCount((c)=>c+1)
 }
-
   return (
     <div>
       <div>
