@@ -1,3 +1,7 @@
+
+1=> first search ( react redux download)  (installation ) visit there and install 3 npm
+
+
 you cannot cover import part of   store with bracket in app.js and contact .js 
 
 ex  import store from "../store/store" = this is right
